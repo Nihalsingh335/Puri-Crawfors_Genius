@@ -1,0 +1,564 @@
+/* Font Family Definitions */
+:root {
+  /* Ubuntu Font Family */
+  --font-ubuntu: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ubuntu-sans: 'Ubuntu Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Inter Font Family */
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Roboto Font Family */
+  --font-roboto: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Open Sans Font Family */
+  --font-open-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Poppins Font Family */
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Montserrat Font Family */
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Lato Font Family */
+  --font-lato: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Source Sans Pro Font Family */
+  --font-source-sans: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Nunito Font Family */
+  --font-nunito: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Work Sans Font Family */
+  --font-work-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Noto Sans Font Family */
+  --font-noto-sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Merriweather Font Family */
+  --font-merriweather: 'Merriweather', Georgia, 'Times New Roman', serif;
+  
+  /* Playfair Display Font Family */
+  --font-playfair: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  
+  /* Raleway Font Family */
+  --font-raleway: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Oswald Font Family */
+  --font-oswald: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* PT Sans Font Family */
+  --font-pt-sans: 'PT Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* PT Serif Font Family */
+  --font-pt-serif: 'PT Serif', Georgia, 'Times New Roman', serif;
+  
+  /* Fira Sans Font Family */
+  --font-fira-sans: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* IBM Plex Font Family */
+  --font-ibm-plex-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ibm-plex-serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+  
+  /* Monospace Font Family */
+  --font-jetbrains-mono: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --font-inconsolata: 'Inconsolata', 'Courier New', Courier, monospace;
+  --font-space-mono: 'Space Mono', 'Courier New', Courier, monospace;
+  --font-courier-prime: 'Courier Prime', 'Courier New', Courier, monospace;
+}
+
+/* Font Utility Classes */
+.font-ubuntu { font-family: var(--font-ubuntu); }
+.font-ubuntu-sans { font-family: var(--font-ubuntu-sans); }
+.font-inter { font-family: var(--font-inter); }
+.font-roboto { font-family: var(--font-roboto); }
+.font-open-sans { font-family: var(--font-open-sans); }
+.font-poppins { font-family: var(--font-poppins); }
+.font-montserrat { font-family: var(--font-montserrat); }
+.font-lato { font-family: var(--font-lato); }
+.font-source-sans { font-family: var(--font-source-sans); }
+.font-nunito { font-family: var(--font-nunito); }
+.font-work-sans { font-family: var(--font-work-sans); }
+.font-noto-sans { font-family: var(--font-noto-sans); }
+.font-merriweather { font-family: var(--font-merriweather); }
+.font-playfair { font-family: var(--font-playfair); }
+.font-raleway { font-family: var(--font-raleway); }
+.font-oswald { font-family: var(--font-oswald); }
+.font-pt-sans { font-family: var(--font-pt-sans); }
+.font-pt-serif { font-family: var(--font-pt-serif); }
+.font-fira-sans { font-family: var(--font-fira-sans); }
+.font-ibm-plex-sans { font-family: var(--font-ibm-plex-sans); }
+.font-ibm-plex-serif { font-family: var(--font-ibm-plex-serif); }
+.font-jetbrains-mono { font-family: var(--font-jetbrains-mono); }
+.font-inconsolata { font-family: var(--font-inconsolata); }
+.font-space-mono { font-family: var(--font-space-mono); }
+.font-courier-prime { font-family: var(--font-courier-prime); }
+
+/* Font Weight Utility Classes */
+.font-thin { font-weight: 100; }
+.font-extralight { font-weight: 200; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+#root {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* ClaimDetailsPage - Tab Container */
+.claim-details-tab-container-fixed {
+  width: 211px;
+  height: 28px;
+}
+
+/* ClaimDetailsPage - Single Pager Tab Button */
+.claim-details-single-pager-tab-btn {
+  width: 94px;
+  height: 28px;
+  opacity: 1;
+  gap: 8px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  /* border-width: 1px; */
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ClaimDetailsPage - Single Pager Tab Label */
+.claim-details-single-pager-tab-label {
+  width: 70px;
+  height: 20px;
+  /* opacity: 1; */
+  gap: 8px;
+  font-family: Ubuntu Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ClaimDetailsPage - Activity Timeline Tab Button */
+.claim-details-activity-timeline-tab-btn {
+  width: 118px;
+  height: 28px;
+  opacity: 1;
+  gap: 8px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ClaimDetailsPage - Activity Timeline Tab Label */
+.claim-details-activity-timeline-tab-label {
+  width: 94px;
+  height: 20px;
+  line-height: 20px;
+  /* opacity: 1; */
+  gap: 8px;
+  font-family: Ubuntu Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ClaimTable - All Status Dropdown */
+.claim-table-all-status-dropdown {
+  width: 147px;
+  height: 28px;
+  padding: 6px 8px;
+  opacity: 1;
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+/* ClaimTable - Policy Type Dropdown */
+.claim-table-policy-type-dropdown {
+  width: 160px;
+  height: 28px;
+  padding: 6px 8px;
+  opacity: 1;
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+/* ClaimTable - Create Button */
+.claim-table-create-button {
+  width: 90px;
+  height: 28px;
+  opacity: 1;
+  gap: 3px;
+  border-radius: 6px;
+}
+
+/* ClaimTable - Create Button Text */
+.claim-table-create-button-text {
+  width: 49px;
+  height: 30px;
+  opacity: 1;
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* ClaimTable - Create Button Plus Icon */
+.claim-table-create-button-plus-icon {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+/* ClaimTable - Create Button Plus Text */
+.claim-table-create-button-plus-text {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+/* ClaimTable - All Status Dropdown Content */
+.claim-table-all-status-dropdown-content {
+  height: 14px;
+  opacity: 1;
+}
+
+/* ClaimTable - Filter Button */
+.claim-table-filter-button {
+  width: 81px;
+  height: 28px;
+  opacity: 1;
+  gap: 3px;
+  border-radius: 6px;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ClaimTable - Filter Button Text */
+.claim-table-filter-button-text {
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* ClaimTable - Filter Button Icon */
+.claim-table-filter-button-icon {
+  width: 11px;
+  height: 12px;
+  opacity: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ClaimDetailsPage - Primary Container */
+.claim-details-primary-container {
+  width: 1329px;
+  height: 130px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ClaimDetailsPage - Content Layout */
+.claim-details-content-layout {
+  width: 951px;
+  height: 65px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* ClaimDetailsPage - Left Section Layout */
+.claim-details-left-section-layout {
+  width: 324px;
+  height: 60px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex-shrink: 0;
+}
+
+/* ClaimDetailsPage - Claim Details Title/Label */
+.claim-details-title {
+  width: 98px;
+  height: 30px;
+  top: 7px;
+  left: 20px;
+  font-family: Ubuntu Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  position: absolute;
+  color: #1f2937;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ClaimDetailsPage - Avatar Image Tailwind Classes */
+.claim-details-avatar-image-w-60 {
+  width: 60px;
+}
+
+.claim-details-avatar-image-h-60 {
+  height: 60px;
+}
+
+.claim-details-avatar-image-top-46 {
+  top: 46px;
+}
+
+.claim-details-avatar-image-left-19 {
+  left: 19px;
+}
+
+/* ClaimDetailsPage - Claim Details Title Layout */
+.claim-details-title-layout-w-98 {
+  width: 98px;
+}
+
+.claim-details-title-layout-h-30 {
+  height: 30px;
+}
+
+.claim-details-title-layout-top-7 {
+  top: 7px;
+}
+
+.claim-details-title-layout-left-20 {
+  left: 20px;
+}
+
+/* ClaimDetailsPage - Claim Details Title Text */
+.claim-details-title-text-font-ubuntu {
+  font-family: Ubuntu Sans;
+}
+
+.claim-details-title-text-weight-600 {
+  font-weight: 600;
+}
+
+.claim-details-title-text-style-semibold {
+  font-style: SemiBold;
+}
+
+.claim-details-title-text-size-16 {
+  font-size: 16px;
+}
+
+.claim-details-title-text-leading-trim-none {
+  leading-trim: NONE;
+}
+
+.claim-details-title-text-line-height-30 {
+  line-height: 30px;
+}
+
+.claim-details-title-text-letter-spacing-0 {
+  letter-spacing: 0%;
+}
+
+/* ClaimDetailsPage - Main Content Panels */
+.claim-details-main-content-panel-w-324 {
+  width: 324px;
+}
+
+.claim-details-main-content-panel-h-60 {
+  height: 60px;
+}
+
+.claim-details-main-content-panel-top-44 {
+  top: 44px;
+}
+
+.claim-details-main-content-panel-left-93 {
+  left: 93px;
+}
+
+.claim-details-main-content-panel-gap-19 {
+  gap: 40px;
+}
+
+/* ClaimDetailsPage - Main Content Panel Borders */
+.claim-details-main-content-panel-border-1 {
+  border: 1px solid #e5e7eb;
+}
+
+/* Panel 2 specific border - reduced */
+.claim-details-panel-2-border {
+  border: 0.25px solid #e5e7eb;
+}
+
+/* ClaimDetailsPage - Details Label Tailwind Classes */
+.claim-details-details-label-w-23 {
+  width: 23px;
+}
+
+.claim-details-details-label-h-60 {
+  height: 60px;
+}
+
+.claim-details-details-label-top-139 {
+  top: 0px;
+}
+
+.claim-details-details-label-left-529 {
+  left: 360px;
+}
+
+.claim-details-details-label-bg-blue {
+  background-color: #2563eb;
+}
+
+.claim-details-details-label-text-white {
+  color: white;
+}
+
+.claim-details-details-label-font-bold {
+  font-weight: bold;
+}
+
+.claim-details-details-label-border {
+  border: 1px solid rgba(0, 89, 223, 1);
+}
+
+.claim-details-details-label-border-radius-4 {
+  border-radius: 4px;
+}
+
+.claim-details-details-label-writing-mode {
+  writing-mode: vertical-rl;
+}
+
+.claim-details-details-label-text-orientation {
+  text-orientation: mixed;
+}
+
+.claim-details-details-label-transform {
+  transform: rotate(180deg);
+}
+
+.claim-details-details-label-padding {
+  padding: 8px 4px;
+}
+
+.claim-details-details-label-font-size-12 {
+  font-size: 12px;
+}
+
+.claim-details-details-label-flex {
+  display: flex;
+}
+
+.claim-details-details-label-items-center {
+  align-items: center;
+}
+
+.claim-details-details-label-justify-center {
+  justify-content: center;
+}
+
+.claim-details-details-label-absolute {
+  position: absolute;
+}
