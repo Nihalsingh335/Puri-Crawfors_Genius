@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nihal-singh.me/Puri-Crawfors_Genius",
+  "homepage": "https://nihal-singh.github.io/Puri-Crawfors_Genius",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
