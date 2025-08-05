@@ -4,21 +4,34 @@ import { FiSearch } from 'react-icons/fi'
 import { useNavigate, useParams, useLocation } from 'react-router-dom'
 import AssignSurveyorPage from './AssignSurveyorPage'
 import ILAForm from './ILAForm'
+import Assignment from '../assets/Assignment.svg'
+import Surveyor from '../assets/Surveyor.svg'
+import JIR from '../assets/JIR.svg'
+import ILA from '../assets/ILA.svg'
+import LOR from '../assets/LOR.svg'
+import Assessment from '../assets/Assessment.svg'
+import Consent from '../assets/Consent.svg'
+import FSR from '../assets/FSR.svg'
+import Invoice from '../assets/Invoice.svg'
+import DBND from '../assets/DBND.svg'
+import Delivery from '../assets/Delivery.svg'
+import Reconcilation from '../assets/Reconcilation.svg'
+import Closed from '../assets/Closed.svg'
 
 const steps = [
-  { icon: <img src="/src/assets/Assignment.svg" alt="Assignment" style={{ width: '20px', height: '20px' }} />, label: 'Assignment', status: 'completed' },
-  { icon: <img src="/src/assets/Surveyor.svg" alt="Surveyor" style={{ width: '20px', height: '20px' }} />, label: 'Surveyor', status: 'current' },
-  { icon: <img src="/src/assets/JIR.svg" alt="JIR" style={{ width: '20px', height: '20px' }} />, label: 'JIR', status: 'pending' },
-  { icon: <img src="/src/assets/ILA.svg" alt="ILA Process" style={{ width: '20px', height: '20px' }} />, label: 'ILA Process', status: 'pending' },
-  { icon: <img src="/src/assets/LOR.svg" alt="LOR Process" style={{ width: '20px', height: '20px' }} />, label: 'LOR Process', status: 'pending' },
-  { icon: <img src="/src/assets/Assessment.svg" alt="Assessment" style={{ width: '20px', height: '20px' }} />, label: 'Assessment', status: 'pending' },
-  { icon: <img src="/src/assets/Consent.svg" alt="Consent" style={{ width: '20px', height: '20px' }} />, label: 'Consent', status: 'pending' },
-  { icon: <img src="/src/assets/FSR.svg" alt="FSR" style={{ width: '20px', height: '20px' }} />, label: 'FSR', status: 'pending' },
-  { icon: <img src="/src/assets/Invoice.svg" alt="Invoice" style={{ width: '20px', height: '20px' }} />, label: 'Invoice', status: 'pending' },
-  { icon: <img src="/src/assets/DBND.svg" alt="BBND/DBND" style={{ width: '20px', height: '20px' }} />, label: 'BBND/DBND', status: 'pending' },
-  { icon: <img src="/src/assets/Delivery.svg" alt="Delivery" style={{ width: '20px', height: '20px' }} />, label: 'Delivery', status: 'pending' },
-  { icon: <img src="/src/assets/Reconcilation.svg" alt="Reconciliation" style={{ width: '20px', height: '20px' }} />, label: 'Reconciliation', status: 'pending' },
-  { icon: <img src="/src/assets/Closed.svg" alt="Closed" style={{ width: '20px', height: '20px' }} />, label: 'Closed', status: 'pending' },
+  { icon: <img src={Assignment} alt="Assignment" style={{ width: '20px', height: '20px' }} />, label: 'Assignment', status: 'completed' },
+  { icon: <img src={Surveyor} alt="Surveyor" style={{ width: '20px', height: '20px' }} />, label: 'Surveyor', status: 'current' },
+  { icon: <img src={JIR} alt="JIR" style={{ width: '20px', height: '20px' }} />, label: 'JIR', status: 'pending' },
+  { icon: <img src={ILA} alt="ILA Process" style={{ width: '20px', height: '20px' }} />, label: 'ILA Process', status: 'pending' },
+  { icon: <img src={LOR} alt="LOR Process" style={{ width: '20px', height: '20px' }} />, label: 'LOR Process', status: 'pending' },
+  { icon: <img src={Assessment} alt="Assessment" style={{ width: '20px', height: '20px' }} />, label: 'Assessment', status: 'pending' },
+  { icon: <img src={Consent} alt="Consent" style={{ width: '20px', height: '20px' }} />, label: 'Consent', status: 'pending' },
+  { icon: <img src={FSR} alt="FSR" style={{ width: '20px', height: '20px' }} />, label: 'FSR', status: 'pending' },
+  { icon: <img src={Invoice} alt="Invoice" style={{ width: '20px', height: '20px' }} />, label: 'Invoice', status: 'pending' },
+  { icon: <img src={DBND} alt="BBND/DBND" style={{ width: '20px', height: '20px' }} />, label: 'BBND/DBND', status: 'pending' },
+  { icon: <img src={Delivery} alt="Delivery" style={{ width: '20px', height: '20px' }} />, label: 'Delivery', status: 'pending' },
+  { icon: <img src={Reconcilation} alt="Reconciliation" style={{ width: '20px', height: '20px' }} />, label: 'Reconciliation', status: 'pending' },
+  { icon: <img src={Closed} alt="Closed" style={{ width: '20px', height: '20px' }} />, label: 'Closed', status: 'pending' },
 ]
 
 const ClaimDetailsPage = () => {

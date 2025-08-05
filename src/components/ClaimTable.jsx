@@ -4,6 +4,8 @@ import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ManageColumnsPanel from './ManageColumnsPanel';
 import FilterPanel from './FilterPanel';
+import sort from '../assets/sort.svg'
+
 
 const claims = [
   {
@@ -587,7 +589,7 @@ const ClaimTable = () => {
                                                <div className="flex items-center gap-1 group hover:bg-[rgba(239,244,251,1)] px-2 py-1 rounded transition-colors duration-200">
                           <span>{column.label}</span>
                           <img 
-                            src="/src/assets/sort.svg" 
+                            src={sort} 
                             alt="Sort" 
                             className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" 
                           />
