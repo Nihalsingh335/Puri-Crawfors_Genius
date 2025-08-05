@@ -7,7 +7,7 @@ import Topbar from './components/Topbar'
 import Dashboard from './components/Dashboard'
 import ClaimTable from './components/ClaimTable'
 import ClaimDetailsPage from './components/ClaimDetailsPage'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route, useNavigate, BrowserRouter } from 'react-router-dom'
 import AssignSurveyorPage from './components/AssignSurveyorPage'
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
             <Route path="/claim/:id/timeline" element={<ClaimDetailsPage />} />
             <Route path="/assign-surveyor" element={<AssignSurveyorPage />} />
           </Routes>
+        <BrowserRouter basename="/Puri-Crawfors_Genius"></BrowserRouter>
         </main>
       </div>
     </div>
