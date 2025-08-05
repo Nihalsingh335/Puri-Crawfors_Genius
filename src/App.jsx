@@ -28,7 +28,7 @@ function App() {
             <Route path="/claim/:id/timeline" element={<ClaimDetailsPage />} />
             <Route path="/assign-surveyor" element={<AssignSurveyorPage />} />
           </Routes>
-        <BrowserRouter basename="/Puri-Crawfors_Genius"></BrowserRouter>
+        
         </main>
       </div>
     </div>
