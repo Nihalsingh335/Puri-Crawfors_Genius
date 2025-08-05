@@ -304,7 +304,7 @@ const ClaimDetailsPage = () => {
                     : 'border-gray-300 bg-gray-100 text-gray-400'
                 } ${isClickable ? 'hover:scale-110 transition-transform' : ''}`}>
                   {step.status === 'completed' ? (
-                    <img src="/src/assets/Assignment.svg" alt="Assignment" style={{ width: '20px', height: '20px' }} />
+                    <img src={Assignment} alt="Assignment" style={{ width: '20px', height: '20px' }} />
                   ) : (
                     step.icon
                   )}
