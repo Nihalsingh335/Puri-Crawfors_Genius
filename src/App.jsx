@@ -9,6 +9,7 @@ import ClaimTable from './components/ClaimTable'
 import ClaimDetailsPage from './components/ClaimDetailsPage'
 import { Routes, Route, useNavigate, BrowserRouter } from 'react-router-dom'
 import AssignSurveyorPage from './components/AssignSurveyorPage'
+import AssignmentCreate from './AssignmentCreate'
 
 function App() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false)
@@ -21,6 +22,7 @@ function App() {
         <main className="flex-1 overflow-auto scrollbar-hide p-2" style={{ marginTop: '80px', minWidth: '1260px', flexShrink: 0 }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/assignment/create" element={<AssignmentCreate />} />
             <Route path="/claims" element={<ClaimTable />} />
             <Route path="/claim/:id" element={<ClaimDetailsPage />} />
             <Route path="/claim/:id/stage/:stage" element={<ClaimDetailsPage />} />

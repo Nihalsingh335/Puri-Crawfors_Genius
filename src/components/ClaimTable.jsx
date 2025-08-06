@@ -5,6 +5,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import ManageColumnsPanel from './ManageColumnsPanel';
 import FilterPanel from './FilterPanel';
 import sort from '../assets/sort.svg'
+import plus from '../assets/plus.svg'
 
 
 const claims = [
@@ -533,8 +534,11 @@ const ClaimTable = () => {
           <select className="claim-table-policy-type-dropdown border border-slate-300 rounded text-sm bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <option>Policy Type All</option>
           </select>
-          <button className="claim-table-create-button bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center gap-2 text-sm">
-            <span className="claim-table-create-button-plus-text">+</span>
+          <button 
+            className="claim-table-create-button bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center gap-2 text-sm"
+            onClick={() => navigate('/assignment/create')}
+          >
+            <img src={plus} alt="Plus" className="claim-table-create-button-plus-text w-4 h-4" />
             <span className="claim-table-create-button-text">Create</span>
           </button>
           <button

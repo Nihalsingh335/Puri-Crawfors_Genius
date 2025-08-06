@@ -1,4 +1,157 @@
 /* Font Family Definitions */
+
+/* ---- CLAIM FORM CUSTOM STYLES ---- */
+
+/* Section Headers (Company Details, Appointed By, etc.) */
+.claim-section-header {
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+
+/* Form Buttons (Edit, Preview, Add, Save, Cancel, etc.) */
+.claim-form-btn {
+  border: 1px solid var(--Primary-Color, rgba(0, 89, 223, 1));
+  background: var(--BG-lignt-Blue, rgba(239, 244, 251, 1));
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(0, 89, 223, 1);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.claim-form-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Required Field Labels */
+.claim-required-label {
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: left;
+  display: block;
+}
+
+/* Branch Office Label */
+.claim-branch-office-label {
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: left;
+  display: block;
+}
+
+/* Branch Office Select Placeholder */
+.claim-input-branch-office option[value=""][disabled] {
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(145, 145, 145, 1);
+}
+
+/* Input Container Common */
+.claim-input-container {
+  border-width: 1px;
+  border-radius: 5px;
+  opacity: 1;
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/* Field-specific input container sizes (examples) */
+.claim-input-company-name, .claim-input-branch-office, .claim-input-nature-survey, .claim-input-owner, .claim-input-segment, .claim-input-customer-office, .claim-input-date-appointment, .claim-input-date-intimation, .claim-input-intimated-loss, .claim-input-insured-office, .claim-input-insured-claim-no, .claim-input-cause-loss, .claim-input-insurer-office {
+  width: 610px;
+  height: 36px;
+  top: 23px;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  opacity: 1;
+  border: 1px solid rgba(203, 203, 203, 1);
+  background: #fff;
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-size: 14px;
+}
+.claim-input-owner, .claim-input-branch-office, .claim-input-customer-office, .claim-input-intimated-loss, .claim-input-insured-claim-no, .claim-input-date-appointment {
+  margin-left: 0;
+}
+
+.claim-input-provisional-insured {
+  width: 1236px;
+  height: 36px;
+  border-width: 1px;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.claim-input-site-person, .claim-input-site-phone, .claim-input-site-email {
+  width: 400px;
+  height: 36px;
+  border-width: 1px;
+  border-radius: 5px;
+  opacity: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--Menu-Color, rgba(109, 112, 128, 1));
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  border-color: rgba(0, 89, 223, 1);
+  background: rgba(0, 89, 223, 1);
+}
+
+input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Add more field-specific classes as needed based on user-provided specs */
+
+/* ---- END CLAIM FORM CUSTOM STYLES ---- */
 :root {
   /* Ubuntu Font Family */
   --font-ubuntu: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
