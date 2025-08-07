@@ -260,7 +260,7 @@ export default function AssignmentCreate() {
                       <option value="" disabled selected>-- Select Customer --</option>
                     </select>
                   </div>
-                  <div className="flex justify-center">
+                  <div className="flex justify-start">
                     <span className="text-gray-500 font-medium">OR</span>
                   </div>
                   <div>
@@ -302,10 +302,6 @@ export default function AssignmentCreate() {
                     </select>
                   </div>
                   <div>
-                    <label className="font-['Ubuntu_Sans'] font-bold text-sm leading-[100%] tracking-[0%] align-middle text-left block mb-2">Nature of Loss<span className="text-red-500">*</span></label>
-                    <input className="w-full h-9 border border-[rgba(203,203,203,1)] rounded px-3 py-2 bg-white font-['Ubuntu_Sans'] text-sm" />
-                  </div>
-                  <div>
                     <label className="font-['Ubuntu_Sans'] font-bold text-sm leading-[100%] tracking-[0%] align-middle text-left block mb-2">Date of Appointment<span className="text-red-500">*</span></label>
                     <input className="w-full h-9 border border-[rgba(203,203,203,1)] rounded px-3 py-2 bg-white font-['Ubuntu_Sans'] text-sm" type="date" />
                   </div>
@@ -317,7 +313,7 @@ export default function AssignmentCreate() {
                     <label className="font-['Ubuntu_Sans'] font-bold text-sm leading-[100%] tracking-[0%] align-middle text-left block mb-2">Insured Claim No.<span className="text-red-500">*</span></label>
                     <input className="w-full h-9 border border-[rgba(203,203,203,1)] rounded px-3 py-2 bg-white font-['Ubuntu_Sans'] text-sm" />
                   </div>
-                  <div>
+                  <div className="mt-51">
                     <label className="font-['Ubuntu_Sans'] font-bold text-sm leading-[100%] tracking-[0%] align-middle text-left block mb-2">Insurer Claim No.<span className="text-red-500">*</span></label>
                     <input className="w-full h-9 border border-[rgba(203,203,203,1)] rounded px-3 py-2 bg-white font-['Ubuntu_Sans'] text-sm" />
                   </div>
