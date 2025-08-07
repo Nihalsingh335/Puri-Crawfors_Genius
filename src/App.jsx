@@ -15,11 +15,11 @@ function App() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false)
 
   return (
-    <div className="flex h-screen bg-gray-100" style={{ minWidth: '1439px', overflow: 'auto' }}>
+    <div className="flex h-screen bg-gray-100">
       <Sidebar isExpanded={isSidebarExpanded} setIsExpanded={setIsSidebarExpanded} />
-      <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarExpanded ? 'ml-[240px]' : 'ml-[66px]'}`} style={{ minWidth: '1260px', flexShrink: 0 }}>
+      <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarExpanded ? 'ml-0 md:ml-[240px]' : 'ml-0 md:ml-[66px]'}`}>
         <Topbar />
-        <main className="flex-1 overflow-auto scrollbar-hide p-2" style={{ marginTop: '80px', minWidth: '1260px', flexShrink: 0 }}>
+        <main className="flex-1 overflow-auto scrollbar-hide p-2 md:p-4 mt-16 md:mt-20">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/assignment/create" element={<AssignmentCreate />} />
@@ -30,7 +30,6 @@ function App() {
             <Route path="/claim/:id/timeline" element={<ClaimDetailsPage />} />
             <Route path="/assign-surveyor" element={<AssignSurveyorPage />} />
           </Routes>
-        
         </main>
       </div>
     </div>
